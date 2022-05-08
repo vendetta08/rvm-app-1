@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+<html>
+    <head>
+        <title>RVM</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+    
+        <div id="info">
+            <img src="{{ url_for('static', filename='img/img1.png') }}" alt="RVM" id="image">
+            <h2 style="font-size: 40px;">Introducing Smart RVM</h2>
+        
+            <a style="font-size: 24px;">
+                Our company brings to you the first of its kind of machine in India, 
+                a reverse vending machine that allows users to dispose of the 
+                PET bottles and in return get rewards. We came up with an awareness 
+                of how to dispose of plastic waste properly. When people know how they 
+                dispose of their waste through Reverse Vending Machines. 
+                It generates new thinking for made in India. That’s we give slogan, 
+                “Throw Trash, Save Cash”. We give a reward for your waste. We appeal 
+                came with us and make India clean. </a><br><br><br><br>
+        
+                <div class="thumbnail">
+                    <img src="{{ url_for('static', filename='img/img2.svg') }}" alt="RVM" />
+                    <h4>Bottle Collection</h4>
+                </div>
+        
+                <div class="thumbnail">
+                    <img src="{{ url_for('static', filename='img/img3.svg') }}" alt="RVM" />
+                    <h4>Customized Rewards</h4>
+                </div>
+        
+                <div class="thumbnail">
+                    <img src="{{ url_for('static', filename='img/img4.svg') }}" alt="RVM" />
+                    <h4>Cloudbased Setup</h4>
+                </div>
+        
+                <div class="thumbnail">
+                    <img src="{{ url_for('static', filename='img/img5.svg') }}"  style="height: 100px; width: 100px;" alt="RVM" />
+                    <h4>Count every Single bottle Recycled</h4>
+                </div>
+            
+        </div>
+        <br>
+        <center>
+            <h2 style="font-size: 40px;">The Recycling circle of a PET Bottle</h2>
+        </center>
+        <img src="{{ url_for('static', filename='img/img6.svg') }}" alt="RVM" />
+        <br>
+    </body>
+    </html> 
+{% endblock %}       

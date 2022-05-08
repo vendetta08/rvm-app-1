@@ -1,0 +1,17 @@
+<!-- templates/profile.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Welcome, {{ name }}<br>
+  You have collected {{ reward }} reward
+</h1>
+{% if current_user.is_authenticated %}
+  <div style="color:yellow; font-size: 40px;">
+    <a href="{{ url_for('main.otp') }}" class="navbar-item">
+    <h1>Enter otp to get reward</h1>
+    </a>
+  </div>
+{% endif %}
+{% endblock %}
